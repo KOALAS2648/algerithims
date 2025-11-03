@@ -1,5 +1,6 @@
 import random
 def binary_search(l:list, target:any, swapped=False):
+    print(l)
     if not swapped:
         middle_idx = len(l) //2
         if l[middle_idx] == target:
