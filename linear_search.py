@@ -2,7 +2,7 @@ def Linear_search(l:list, target:any, n=0):
     n = 0
     if n > len(l):
         return False
-    for i in range(len(l)):
+    for _ in range(len(l)):
         if l[n] == target:
             return n
         n +=1
