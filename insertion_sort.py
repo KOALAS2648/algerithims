@@ -4,5 +4,7 @@ def Insertion_sort(l:list):
             if l[j+1] < l[j]:
                 l.insert(j, l.pop(j+1))
     return l
-n = [9,8,7,6,5,4,3,2,1]
-print(Insertion_sort(n))
+
+if __name__ == "__main__":
+    n = [9,8,7,6,5,4,3,2,1]
+    print(Insertion_sort(n))
