@@ -8,7 +8,7 @@ def Binary_search(l:list, target:any, swapped=False):
         if l[middle_idx] > target:
             return Binary_search(l[:middle_idx], target, True)
         if l[middle_idx] < target:
-            return Binary_search(l[middle_idx+1:], target,)
+            return Binary_search(l[middle_idx+1:], target, True)
     else:
         return True
     
