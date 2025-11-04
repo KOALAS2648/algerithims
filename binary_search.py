@@ -7,7 +7,7 @@ def binary_search(l:list, target:any, swapped=False):
         if l[middle_idx] > target:
             return binary_search(l[:middle_idx], target, True)
         if l[middle_idx] < target:
-            return binary_search(l[middle_idx+1:], target,)
+            return binary_search(l[middle_idx+1:], target, True)
     else:
         return True
 n = [random.randint(0, 1000) for i in range(1000)]
