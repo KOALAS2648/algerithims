@@ -5,8 +5,8 @@ from linear_search import Linear_search
 import time as t
 import os
 
-find_val = 5118
-TIMES = 1000
+find_val = 7933
+TIMES = 10000
 print(f"trying to find:{find_val}")
 
 def binary_search_time(sum=0):
