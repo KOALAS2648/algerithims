@@ -1,6 +1,8 @@
 import random
 import time as t
 def Binary_search(l:list, target:any):
+        if l[0] == target:
+                return True
         middle_idx = len(l) //2
         if l[middle_idx] == target:
             return True
@@ -8,8 +10,8 @@ def Binary_search(l:list, target:any):
             return Binary_search(l[:middle_idx], target)
         if l[middle_idx] < target:
             return Binary_search(l[middle_idx+1:], target)
-    else:
-        return True
+        else:
+                return False
     
 if __name__ == "__main__":
     n = [random.randrange(0, 1000) for i in range(1000)]
