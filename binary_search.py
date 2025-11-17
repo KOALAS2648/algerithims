@@ -1,14 +1,13 @@
 import random
 import time as t
-def Binary_search(l:list, target:any, swapped=False):
-    if not swapped:
+def Binary_search(l:list, target:any):
         middle_idx = len(l) //2
         if l[middle_idx] == target:
             return True
         if l[middle_idx] > target:
-            return Binary_search(l[:middle_idx], target, True)
+            return Binary_search(l[:middle_idx], target)
         if l[middle_idx] < target:
-            return Binary_search(l[middle_idx+1:], target, True)
+            return Binary_search(l[middle_idx+1:], target)
     else:
         return True
     
